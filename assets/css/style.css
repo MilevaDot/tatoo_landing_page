@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: papayawhip;
+    /* background-color: papayawhip; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -16,7 +16,7 @@
     --main_color-secondary: #FFA07A;
     --background-color: papayawhip;
     --lowText_font_size: 16px;
-    --text_size_title: 40px;
+    --text_size_title: 60px;
     --text_title_card: 24px;
     --text_title_cardv2: 20px;
     --text_paragraph: 16px;
@@ -71,19 +71,20 @@ header {
 
 .menu nav ul li a {
     text-decoration: none; /* Variable */
-    color: peru; /* Variable */
-    font-size: 16px;
+    color: var(--color_text-secondary); /* Variable */
+    /* font-size: 16px; */
+    font-size: var(--lowText_font_size);
     position: relative;
 }
 
 .menu nav ul li a:hover {
-    color: blueviolet; /* Variable */
+    color: var(--color_text-primary); /* Variable */
 }
 
 .menu .social_media {
     display: flex;
     margin: 0px 10px;
-    width: 30px;
+    width: 60px;
 }
 
 .menu .social_media a {
@@ -92,4 +93,64 @@ header {
 
 .menu .social_media img {
     width: 20px;
+}
+
+.container_cover {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--background-color);
+}
+
+.cover {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.text_cover {
+    width: 100%;
+    padding-right: 100px;
+}
+
+.text_cover h1 {
+    font-size: var(--text_size_title);
+    color: var(--color_text-secondary);
+}
+
+.text_cover p {
+    font-size: var(--text_title_card);
+    margin-top: 50px;
+    color: var(--color_text-tertiary);
+}
+
+.btn_text {
+    display: block;
+    width: 200px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    background: var(--color_text-secondary);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.btn_text:hover {
+    background: transparent;
+    border: 2px solid var(--color_text-secondary);
+    color: var(--color_text-secondary);
+}
+
+.image_cover {
+    width: 100%;
+}
+
+.image_cover img {
+    width: 500px;
 }
