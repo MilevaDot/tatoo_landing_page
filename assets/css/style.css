@@ -8,6 +8,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --color_text-primary: #EEC58B;
+    --color_text-secondary: #59666F;
+    --color_text-tertiary: #FA8072;
+    --main_color-primary: #CD5C5C;
+    --main_color-secondary: #FFA07A;
+    --background-color: papayawhip;
+    --lowText_font_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+
 header {
     width: 100%;
     height: 100px;
